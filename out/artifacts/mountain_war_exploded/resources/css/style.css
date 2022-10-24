@@ -1,0 +1,639 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap");
+
+/* 초기 설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2F4858;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* header .main-images {
+    width: 100%;
+    height: auto;
+  } */
+
+    /* 한라산국립공원 슬로건 */
+  header .slogon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 10;
+  }
+  
+  header .slogon a {
+    color: #fff;
+  }
+  
+  header .slogon .slogon-deco {
+    font-size: 20px;
+    padding-left: 4px;
+  }
+  
+  header .slogon .slogon-title {
+    font-size: 54px;
+    letter-spacing: 6px;
+  }
+  
+  header .slogon .slogon-en {
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 6px;
+  }
+
+  /* 메인 sns 아이콘 */
+  header .main_sns {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+    /* margin-top: -60px; */
+    z-index: 10;
+  }
+  
+  header .main_sns li {
+    margin: 18px 0px;
+  }
+  
+  header .main_sns .sns-icon {
+    font-size: 34px;
+    color: #fff;
+  }
+  
+  /* 제주 날씨 정보 */
+  header .info {
+    position: absolute;
+    left: 10%;
+    bottom: 6%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+  }
+  header .info ul {}
+  header .info ul li:nth-child(1) {
+    font-size: 16px;
+    color: #DFE0DF;
+  }
+  
+  header .info ul li:nth-child(2) {
+    padding-top: 4px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  header .info .line {
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+  }
+  
+  /* nav */
+  nav {
+    position: absolute;
+    left: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px auto;
+    width: 80%;
+    z-index: 1000;
+  }
+  
+  /* 메뉴 햄버거 버튼 */
+  nav i {
+    /* color: #2F4858; */
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  nav #gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  nav #gnb a {
+    font-size: 14px;
+    margin: 0px 30px;
+  }
+    /* 메인 검색 */
+  nav .search input {
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid #2F4858;
+    margin-right: 18px;
+    background: transparent;
+    padding: 2px 4px;
+  }
+  
+  nav .search input:focus {
+    outline: none;
+  }
+  nav .search a {}
+  nav .search i {
+    color: #2F4858;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+    /* 배경이미지 */
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /* height: 100%; */
+}
+#wrap .img_box {width: 100%;
+            /* height: 800px; */
+            height: 100%;
+            background: #ccc;}
+.img_box ul {position: relative;
+        width: 100%;
+        /* height: 800px; */
+        height: 100%;
+        overflow: hidden;
+        list-style: none;}
+.img_box li {position: absolute;
+        width: 100%;
+        /* height: 800px; */
+        height: 100%;
+        left: 100%;
+        top: 0;
+        background-size: cover;
+    }
+.img_box li:nth-child(1) {background-image: url(/resources/images/main_01.jpg);
+left: 0;}
+.img_box li:nth-child(2) {background-image: url(/resources/images/main_02.jpg);
+    left: 100%;}
+.img_box li:nth-child(3) {background-image: url(/resources/images/main_03.jpg);
+    left: 200%;}
+
+.btn {
+  
+  position: absolute;
+  display: flex;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  justify-content: space-between;
+  bottom: 60px;
+}
+.btn li {background-image: url(/resources/images/btnVisual.png);
+    width: 14px;
+    height: 16px;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;}
+
+.btn li.on {background-position: center bottom;}
+
+  /* 구름 */
+header .cloud {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  opacity: 0.7;
+}
+header .cloud1 {
+  top: 50%;
+  left: -250px;
+  animation: ani1 50s linear infinite;
+}
+header .cloud2 {
+  top: 20%;
+  right: 0;
+  animation: ani2 40s linear infinite;
+}
+
+/*구름모션*/
+@keyframes ani1 {
+	0% {left: -250px;}
+	100% {left: 1920px;}
+}
+
+@keyframes ani2 {
+	0% {right: -250px;}
+	100% {right: 1920px;}
+}
+
+/* 탐방로 (지도) */
+.trails {}
+.trails .title-wrap {
+  margin-top: 80px;
+}
+
+.title-wrap .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-wrap .title .title-ico {
+  width: 36px;
+  height: auto;
+}
+
+.title-wrap .title .safety-ico {
+  width: 60px;
+  height: auto;
+}
+
+.title-wrap .title .chunck {
+  margin-left: 16px;
+}
+
+.title-wrap .title .chunck .chunck-sub {
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.title-wrap .title .chunck .safety-ch-sub {
+  letter-spacing: 5.4px;
+}
+
+.title-wrap .title .chunck .chunck-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.1;
+}
+
+.title-wrap .title .chunck .chunck-bottom .chunck-main {
+  font-size: 38px;
+  color: #203961;
+}
+
+.title-wrap .title .chunck .chunck-bottom .title-round {
+  margin-left: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #84A2D4;
+}
+
+.title-wrap .title-desc {
+  padding-top: 18px;
+  font-size: 13px;
+  color: #3F4756;
+  text-align: center;
+}
+
+  /* 탭 */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+  width: 80%;
+  margin: 60px auto 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab .tab-btns {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tab button {
+  background-color: inherit;
+  border: 2px solid #84A2D4;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 32px;
+  margin: 0px 20px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #84A2D4;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #c1d0e7;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #84A2D4;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  padding: 6px 12px;
+  padding: 30px 50px;
+  border: 2px solid #84A2D4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  /* border-top: none; */
+}
+
+
+.tabcontent .trails-detail {}
+
+.tabcontent .trails-detail .trails-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.tabcontent .trails-detail .trails-title .road {
+  font-size: 22px;
+  color: #203961;
+}
+
+.tabcontent .trails-detail .trails-title .road-plus {
+  font-size: 20px;
+  color: #203961;
+}
+
+.tabcontent .trails-detail .trails-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabcontent .trails-detail .trails-imgs .pic img {
+  width: 400px;
+  height: 280px;
+  border-radius: 30px;
+}
+
+.tabcontent .trails-detail .trails-imgs .map img {
+  width: 400px;
+  height: 280px;
+  background-color: rosybrown;
+  border-radius: 30px;
+}
+
+.tabcontent .trails-detail .km-time {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #203961;
+  text-align: center;
+}
+
+.tabcontent .trails-detail .route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabcontent .trails-detail .route .route-detail-box {
+  display: inline-block;
+}
+
+.tabcontent .trails-detail .route .route-detail-box::after {
+  content: "→";
+  display: inline-block;
+  margin: 0 10px;
+  color: #203961;
+}
+
+.tabcontent .trails-detail .route .route-detail-box:last-child::after {
+  content: "";
+}
+
+.tabcontent .trails-detail .route .route-detail-box:first-child .route-detail {
+  background-color: #84A2D4;
+  color: #fff;
+}
+
+.tabcontent .trails-detail .route .route-detail-box:last-child .route-detail {
+  background-color: #84A2D4;
+  color: #fff;
+}
+
+.tabcontent .trails-detail .route .route-detail {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1.4px solid #84A2D4;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #84A2D4;
+}
+
+.tabcontent .trails-detail .route .route-arrow {
+  color: #3F4756;
+}
+
+/* 예약 */
+
+.reserv {
+  position: relative;
+}
+
+.reserv .reserv-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.reserv .reserv-title .reserv-ico {
+  margin-right: 16px;
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.reserv .reserv-title .reserv-line {
+  padding: 10px;
+  border-bottom: 2px solid #84A2D4;
+  font-size: 26px;
+}
+
+.reserv .reserv-box {
+  position: relative;
+  margin-top: 50px;
+}
+
+.reserv .reserv-box .reserv-txtbtn-box {
+  position: absolute;
+  top: 70px;
+}
+
+.reserv .reserv-box .reserv-text {
+  position: relative;
+  margin: 0px 140px;
+  margin-bottom: 50px;
+  padding: 50px;
+  width: 500px;
+  height: auto;
+  background-color: #F8F9FB;
+  z-index: 20;
+}
+
+.reserv .reserv-box .reserv-text p:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.reserv .reserv-box .reserv-btn {
+  position: absolute;
+  left: 270px;
+  bottom: -60px;
+  padding: 20px;
+  background-color: #84A2D4;
+  color: #fff;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.reserv .reserv-box .reserv-imgbox {
+  position: absolute;
+  top: 0;
+  right: 140px;
+  width: 600px;
+  height: 600px;
+  background-color: gray;
+  background-image: url(/resources/images/reserv_01.jpg);
+  z-index: 1;
+}
+
+.reserv .reserv-bg {
+  margin-top: 280px;
+  width: 100%;
+  height: 500px;
+  background-color: pink;
+  background-image: url(/resources/images/reserv_02.jpg);
+  background-size: cover;
+  background-position: 25% 80%;
+  background-repeat: no-repeat;
+}
+
+/* 안전수칙 */
+.safety .safety-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 140px;
+  width: 100%;
+  height: 460px;
+  background-image: url(/resources/images/safe_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+}
+
+.safety .rule-box {
+  position: relative;
+  margin: 0 18px;
+  width: 280px;
+  height: 380px;
+  background-color: #F8F9FB;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.safety .rule-box .imgbox img {
+  width: 100%;
+  height: 280px;
+}
+
+.safety .rule-box .rule-ico {
+  display: block;
+  margin-top: -30px;
+  margin-left: 115px;
+  width: 50px;
+  height: 50px;
+}
+
+.safety .rule-box .rule-title {
+  display: block;
+  padding-top: 14px;
+  font-size: 23px;
+  color: #203961;
+  text-align: center;
+}
+
+.safety .rule1, .safety .rule3 {
+  margin-top: -220px;
+}
+
+.safety .rule2, .safety .rule4 {
+  margin-bottom: -220px;
+}
+
+
