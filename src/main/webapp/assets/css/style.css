@@ -186,7 +186,7 @@ header {
 #wrap {
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 980px;
     /* height: 100%; */
 }
 #wrap .img_box {width: 100%;
@@ -207,11 +207,11 @@ header {
         top: 0;
         background-size: cover;
     }
-.img_box li:nth-child(1) {background-image: url(/resources/images/main_01.jpg);
+.img_box li:nth-child(1) {background-image: url(/assets/images/main_01.jpg);
 left: 0;}
-.img_box li:nth-child(2) {background-image: url(/resources/images/main_02.jpg);
+.img_box li:nth-child(2) {background-image: url(/assets/images/main_02.jpg);
     left: 100%;}
-.img_box li:nth-child(3) {background-image: url(/resources/images/main_03.jpg);
+.img_box li:nth-child(3) {background-image: url(/assets/images/main_03.jpg);
     left: 200%;}
 
 .btn {
@@ -224,7 +224,7 @@ left: 0;}
   justify-content: space-between;
   bottom: 60px;
 }
-.btn li {background-image: url(/resources/images/btnVisual.png);
+.btn li {background-image: url(/assets/images/btnVisual.png);
     width: 14px;
     height: 16px;
     background-size: cover;
@@ -263,8 +263,10 @@ header .cloud2 {
 }
 
 /* 탐방로 (지도) */
-.trails {}
-.trails .title-wrap {
+.trails {
+  padding-bottom: 70px;
+}
+.title-wrap {
   margin-top: 80px;
 }
 
@@ -330,7 +332,7 @@ header .cloud2 {
 
 .title-wrap .title-desc {
   padding-top: 18px;
-  font-size: 13px;
+  font-size: 15px;
   color: #3F4756;
   text-align: center;
 }
@@ -404,12 +406,12 @@ header .cloud2 {
 }
 
 .tabcontent .trails-detail .trails-title .road {
-  font-size: 22px;
+  font-size: 32px;
   color: #203961;
 }
 
 .tabcontent .trails-detail .trails-title .road-plus {
-  font-size: 20px;
+  font-size: 32px;
   color: #203961;
 }
 
@@ -424,16 +426,22 @@ header .cloud2 {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.tabcontent .trails-detail .trails-imgs .pic {
+  width: 40%;
+}
 .tabcontent .trails-detail .trails-imgs .pic img {
-  width: 400px;
-  height: 280px;
+  /*width: 400px;*/
+  width: 100%;
+  /*height: 280px;*/
   border-radius: 30px;
 }
-
+.tabcontent .trails-detail .trails-imgs .map {
+  width: 40%;
+}
 .tabcontent .trails-detail .trails-imgs .map img {
-  width: 400px;
-  height: 280px;
+  /*width: 400px;*/
+  width: 100%;
+  /*height: 280px;*/
   background-color: rosybrown;
   border-radius: 30px;
 }
@@ -498,10 +506,12 @@ header .cloud2 {
 
 .reserv {
   position: relative;
+  padding-bottom: 70px;
 }
 
 .reserv .reserv-title {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -530,13 +540,18 @@ header .cloud2 {
 
 .reserv .reserv-box .reserv-text {
   position: relative;
-  margin: 0px 140px;
+  left: 10%;
+  /*margin: 0px 140px;*/
+  margin: 0px 40px;
   margin-bottom: 50px;
-  padding: 50px;
-  width: 500px;
+  padding: 60px 80px;
+  /*width: 500px;*/
+  width: 50%;
   height: auto;
   background-color: #F8F9FB;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 20;
+  box-sizing: border-box;
 }
 
 .reserv .reserv-box .reserv-text p:not(:last-child) {
@@ -545,7 +560,7 @@ header .cloud2 {
 
 .reserv .reserv-box .reserv-btn {
   position: absolute;
-  left: 270px;
+  left: 26%;
   bottom: -60px;
   padding: 20px;
   background-color: #84A2D4;
@@ -557,11 +572,12 @@ header .cloud2 {
 .reserv .reserv-box .reserv-imgbox {
   position: absolute;
   top: 0;
-  right: 140px;
-  width: 600px;
+  right: 10%;
+  /*width: 600px;*/
+  width: 50%;
   height: 600px;
   background-color: gray;
-  background-image: url(/resources/images/reserv_01.jpg);
+  background-image: url(/assets/images/reserv_01.jpg);
   z-index: 1;
 }
 
@@ -570,13 +586,20 @@ header .cloud2 {
   width: 100%;
   height: 500px;
   background-color: pink;
-  background-image: url(/resources/images/reserv_02.jpg);
+  background-image: url(/assets/images/reserv_02.jpg);
   background-size: cover;
   background-position: 25% 80%;
   background-repeat: no-repeat;
 }
 
 /* 안전수칙 */
+.safety {
+  padding-bottom: 120px;
+}
+.title-wrap .title .chunck .safety-ch-sub {
+  letter-spacing: 2.8px;
+}
+
 .safety .safety-bg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,7 +613,7 @@ header .cloud2 {
   margin-top: 140px;
   width: 100%;
   height: 460px;
-  background-image: url(/resources/images/safe_bg.jpg);
+  background-image: url(/assets/images/safe_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -636,4 +659,180 @@ header .cloud2 {
   margin-bottom: -220px;
 }
 
+
+/* 공지사항 */
+.notice {}
+.notice .title-wrap .title .chunck .chunck-sub {
+  letter-spacing: 1.4px;
+}
+.notice .notice-wrap {
+  position: relative;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  /* background-color: lightpink; */
+}
+.notice .notice-bg {
+  width: 70%;
+  height: 700px;
+  background-color: lightgray;
+  background: url(/assets/images/notice_01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* explore nature */
+.notice-txt {}
+.notice-txt .title-round {
+  margin-left: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #F8F9FB;
+}
+.notice-box {
+  position: absolute;
+  top: -80px;
+  right: 10%;
+}
+.notice-box .n-content {
+  width: 400px;
+  margin: 30px 0;
+  padding: 40px;
+  background: #F8F9FB;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.n-content strong {
+  display: block;
+  padding-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-weight: 700;
+  font-size: 20px;
+  color: #203961;
+}
+.n-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.n-content span {
+  display: block;
+  padding-top: 20px;
+  text-align: right;
+}
+
+/* 공지사항 이미지 안 내용 */
+.notice-txtbox {
+  padding-top: 280px;
+}
+.notice-txtbox .notice-txt {}
+.notice-txtbox .notice-txt .underline {
+  display: inline-block;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  border-bottom: 5px solid #84A2D4;
+}
+.notice-txt strong {
+  padding-left: 80px;
+
+  font-size: 32px;
+  font-weight: 700;
+  color: #F8F9FB;
+}
+
+/* 더보기버튼 */
+.more {
+  margin-top: 50px;
+  margin-left: 130px;
+  width: 120px;
+  padding: 16px 20px;
+  background-color: #84A2D4;
+  color: #fff;
+  z-index: 30;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* 푸터 */
+footer {
+  position: relative;
+}
+
+.footer-bg {
+  background: lightgrey;
+  background: url(/assets/images/footer_bg.jpg);
+  height: 360px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.footer-contents {
+  padding-top: 70px;
+}
+
+/* 푸터 로고 */
+.logo {
+  text-align: center;
+}
+footer .logo img {
+  width: 70px;
+  height: auto;
+  text-align: center;
+}
+
+/* 푸터 sns 아이콘 */
+footer .sns-wrap {
+  padding-top: 18px;
+  text-align: center;
+}
+footer .sns-wrap i {
+  padding: 0 12px;
+  font-size: 38px;
+  color: #84A2D4;
+}
+.up img {
+  width: 38px;
+  height: auto;
+}
+
+/* 푸터 메뉴 navi */
+.footer-gnb {
+  padding-top: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+.footer-gnb li {
+  display: inline;
+  padding: 0 20px;
+}
+
+footer .info {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer .info address {
+  font-style: normal;
+  display: inline;
+  padding-right: 20px;
+}
+footer .info p {
+  display: inline;
+}
+
+/* 위로 가기 아이콘 */
+footer .up {
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  text-align: center;
+}
+footer .up img {
+  display: block;
+}
 

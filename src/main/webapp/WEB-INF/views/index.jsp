@@ -15,7 +15,7 @@
   <title>메인페이지</title>
 
   <!-- 외부 스타일시트 -->
-  <link rel="stylesheet" href="/resources/css/style.css"></link>
+  <link rel="stylesheet" href="/assets/css/style.css"></link>
 
   <!-- 제이쿼리CDN -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
@@ -24,7 +24,7 @@
   <script src="https://kit.fontawesome.com/23e93170df.js" crossorigin="anonymous"></script>
 
   <!-- 외부 스크립트 -->
-  <script src="/resources/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </head>
 <body>
 <header>
@@ -93,8 +93,8 @@
   </div>
 
   <!-- 구름 -->
-  <img src="/resources/images/cloud_01.png" class="cloud cloud1" alt="구름">
-  <img src="/resources/images/cloud_02.png" class="cloud cloud2" alt="구름">
+  <img src="/assets/images/cloud_01.png" class="cloud cloud1" alt="구름">
+  <img src="/assets/images/cloud_02.png" class="cloud cloud2" alt="구름">
 </header>
 
 <!-- 탐방로 (지도) -->
@@ -102,7 +102,7 @@
   <!-- 타이틀 -->
   <div class="title-wrap">
     <div class="title">
-      <img class="title-ico" src="/resources/images/road_i.png" alt="아이콘" />
+      <img class="title-ico" src="/assets/images/road_i.png" alt="아이콘" />
       <div class="chunck">
         <em class="chunck-sub">한라산의 5가지</em>
         <div class="chunck-bottom">
@@ -137,10 +137,10 @@
       </div>
       <div class="trails-imgs">
         <div class="pic">
-          <img src="/resources/images/road_01.jpg" alt="어리목탐방로" />
+          <img src="/assets/images/road_01.jpg" alt="어리목탐방로" />
         </div>
         <div class="map">
-          <img src="/resources/images/roadmap_01.jpg" alt="어리목탐방로 지도" />
+          <img src="/assets/images/roadmap_01.jpg" alt="어리목탐방로 지도" />
         </div>
       </div>
       <span class="km-time">6.8KM / 3시간</span>
@@ -172,10 +172,10 @@
       </div>
       <div class="trails-imgs">
         <div class="pic">
-          <img src="/resources/images/road_02.jpeg" alt="영실탐방로" />
+          <img src="/assets/images/road_02.jpeg" alt="영실탐방로" />
         </div>
         <div class="map">
-          <img src="/resources/images/roadmap_02.jpg" alt="영실탐방로 지도" />
+          <img src="/assets/images/roadmap_02.jpg" alt="영실탐방로 지도" />
         </div>
       </div>
       <span class="km-time">5.8KM / 2시간 30분</span>
@@ -207,10 +207,10 @@
       </div>
       <div class="trails-imgs">
         <div class="pic">
-          <img src="/resources/images/road_03.jpeg" alt="성판악탐방로" />
+          <img src="/assets/images/road_03.jpeg" alt="성판악탐방로" />
         </div>
         <div class="map">
-          <img src="/resources/images/roadmap_03.jpg" alt="성판악탐방로 지도" />
+          <img src="/assets/images/roadmap_03.jpg" alt="성판악탐방로 지도" />
         </div>
       </div>
       <span class="km-time">9.6KM / 4시간 30분</span>
@@ -242,10 +242,10 @@
       </div>
       <div class="trails-imgs">
         <div class="pic">
-          <img src="/resources/images/road_04.jpeg" alt="관음사탐방로" />
+          <img src="/assets/images/road_04.jpeg" alt="관음사탐방로" />
         </div>
         <div class="map">
-          <img src="/resources/images/roadmap_04.jpg" alt="관음사탐방로 지도" />
+          <img src="/assets/images/roadmap_04.jpg" alt="관음사탐방로 지도" />
         </div>
       </div>
       <span class="km-time">8.7KM / 5시간</span>
@@ -277,10 +277,10 @@
       </div>
       <div class="trails-imgs">
         <div class="pic">
-          <img src="/resources/images/road_05.jpeg" alt="돈내코탐방로" />
+          <img src="/assets/images/road_05.jpeg" alt="돈내코탐방로" />
         </div>
         <div class="map">
-          <img src="/resources/images/roadmap_05.jpg" alt="돈내코탐방로 지도" />
+          <img src="/assets/images/roadmap_05.jpg" alt="돈내코탐방로 지도" />
         </div>
       </div>
       <span class="km-time">7KM / 3시간 30분</span>
@@ -302,7 +302,7 @@
 <!-- 예약 -->
 <section class="reserv">
   <div class="reserv-title">
-    <img class="reserv-ico" src="/resources/images/reserv_i.png" alt="예약아이콘" />
+    <img class="reserv-ico" src="/assets/images/reserv_i.png" alt="예약아이콘" />
     <strong class="reserv-line">성판악탐방로, 관음사탐방로 예약</strong>
   </div>
   <div class="reserv-box">
@@ -330,9 +330,9 @@
   <!-- 타이틀 -->
   <div class="title-wrap">
     <div class="title">
-      <img class="title-ico safety-ico" src="/resources/images/safe_i.png" alt="아이콘" />
+      <img class="title-ico safety-ico" src="/assets/images/safe_i.png" alt="아이콘" />
       <div class="chunck">
-        <em class="chunck-sub safety-ch-sub">안전한 산행을 위해 -</em>
+        <em class="chunck-sub safety-ch-sub">안전한 산행을 위해</em>
         <div class="chunck-bottom">
           <strong class="chunck-main">안전수칙</strong>
           <span class="title-round"></span>
@@ -349,42 +349,129 @@
   <div class="safety-bg">
     <div class="rule1 rule-box">
       <div class="imgbox">
-        <img src="/resources/images/safe_01.jpg" alt="나무" />
+        <img src="/assets/images/safe_01.jpg" alt="나무" />
       </div>
-      <img class="rule-ico" src="/resources/images/round.png" alt="1" />
+      <img class="rule-ico" src="/assets/images/round.png" alt="1" />
       <strong class="rule-title">안전수칙</strong>
     </div>
     <div class="rule2 rule-box">
       <div class="imgbox">
-        <img src="/resources/images/safe_02.jpg" alt="하이킹" />
+        <img src="/assets/images/safe_02.jpg" alt="하이킹" />
       </div>
-      <img class="rule-ico" src="/resources/images/number-2.png" alt="2" />
+      <img class="rule-ico" src="/assets/images/number-2.png" alt="2" />
       <strong class="rule-title">안전계획</strong>
     </div>
     <div class="rule3 rule-box">
       <div class="imgbox">
-        <img src="/resources/images/safe_03.jpg" alt="계곡" />
+        <img src="/assets/images/safe_03.jpg" alt="계곡" />
       </div>
-      <img class="rule-ico" src="/resources/images/number-3.png" alt="3" />
+      <img class="rule-ico" src="/assets/images/number-3.png" alt="3" />
       <strong class="rule-title">안전산행</strong>
     </div>
     <div class="rule4 rule-box">
       <div class="imgbox">
-        <img src="/resources/images/safe_04.jpg" alt="숲길" />
+        <img src="/assets/images/safe_04.jpg" alt="숲길" />
       </div>
-      <img class="rule-ico" src="/resources/images/number-four.png" alt="4" />
+      <img class="rule-ico" src="/assets/images/number-four.png" alt="4" />
       <strong class="rule-title">사고대응</strong>
     </div>
   </div>
 
-  <!-- <p class="rule-txt">
-              등산허용 안내, 등산통제 기준,
-              출입제한 구역, 탐방 시 유의사항
-          </p> -->
-  <!-- <span class="check">확인하기</span>             -->
 </section>
+
 <!-- 공지사항 -->
-<section class="notice"></section>
+<section class="notice">
+  <!-- 타이틀 -->
+  <div class="title-wrap">
+    <div class="title">
+      <img class="title-ico safety-ico" src="/assets/images/notice_i.png" alt="아이콘" />
+      <div class="chunck">
+        <em class="chunck-sub notice-ch-sub">한라산에 대한 알림들</em>
+        <div class="chunck-bottom">
+          <strong class="chunck-main">공지사항</strong>
+          <span class="title-round"></span>
+        </div>
+      </div>
+
+    </div>
+    <p class="title-desc">
+      한라산 국립공원에 대한 공지사항을 확인하고 다양한 소식과 알림사항들을 확인해보세요.
+    </p>
+  </div>
+  <!-- //타이틀 -->
+  <!-- 공지사항 배경이미지 -->
+  <div class="notice-wrap">
+    <div class="notice-bg">
+      <div class="notice-txtbox">
+        <div class="notice-txt">
+          <div class="underline">
+            <strong>EXPLORE NATURE</strong>
+          </div>
+          <span class="title-round"></span>
+        </div>
+        <div class="more">
+          공지사항 더보기
+        </div>
+      </div>
+    </div>
+    <div class="notice-box">
+      <div class="n-content">
+        <strong> 「2022년 임인년 새해맞이」야간 「2022년 임인년 새해맞이」야간「2022년 임인년 새해맞이」야간「2022년 임인년 새해맞이」야간  </strong>
+        <p>
+          ❍ 2022년 임인년 새해를 맞이 야간산행은 단계적 일상회복을 위한 사회적 거리두기 및 코로나19 예방을 위하여  야간산행 허용계획이 없음을 알려드립니다.
+          ❍ 2022년 임인년 새해를 맞이 야간산행은 단계적 일상회복을 위한 사회적 거리두기 및 코로나19 예방을 위하여  야간산행 허용계획이 없음을 알려드립니다.
+          ❍ 2022년 임인년 새해를 맞이 야간산행은 단계적 일상회복을 위한 사회적 거리두기 및 코로나19 예방을 위하여  야간산행 허용계획이 없음을 알려드립니다.
+        </p>
+        <span>2021-11-02</span>
+      </div>
+      <div class="n-content">
+        <strong> 「2022년 임인년 새해맞이」야간 </strong>
+        <p>
+          ❍ 2022년 임인년 새해를 맞이 야간산행은 단계적 일상회복을 위한 사회적 거리두기 및 코로나19 예방을 위하여  야간산행 허용계획이 없음을 알려드립니다.
+        </p>
+        <span>2021-11-02</span>
+      </div>
+      <div class="n-content">
+        <strong> 「2022년 임인년 새해맞이」야간 </strong>
+        <p>
+          ❍ 2022년 임인년 새해를 맞이 야간산행은 단계적 일상회복을 위한 사회적 거리두기 및 코로나19 예방을 위하여  야간산행 허용계획이 없음을 알려드립니다.
+        </p>
+        <span>2021-11-02</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-bg">
+    <div class="footer-contents">
+      <div class="logo">
+        <a href="#"><img src="/assets/images/logo.png" alt=""></a>
+      </div>
+      <div class="sns-wrap">
+        <a href="#"><i class="sns-icon fab fa-instagram"></i></a>
+        <a href="#"><i class="sns-icon fab fa-facebook-square"></i></a>
+      </div>
+      <ul class="footer-gnb">
+        <li><a href="#">공원소개</a></li>
+        <li><a href="#">탐방정보</a></li>
+        <li><a href="#">안전수칙</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">홍보관</a></li>
+      </ul>
+      <div class="info">
+        <address>(63077) 제주특별자치도 제주시 1100로 2070-61(해안동) </address>
+        <p>TEL 064-713-9950~1/ FAX 064-710-7819</p>
+      </div>
+      <div class="up">
+        <img src="/assets/images/up-arrow.png" alt="">
+        TOP
+      </div>
+    </div>
+
+  </div>
+</footer>
+
 
 <script>
   //탐방로 - 탭바
